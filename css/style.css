@@ -1,0 +1,151 @@
+@import url('normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&display=swap');
+
+:root {
+  --base-yellow: hsl(55, 100%, 88%);
+  --skip-shade-100: hsl(43, 100%, 83%);
+  --skip-shade-200: hsl(33, 100%, 80%);
+  --skip-shade-300: hsl(19, 100%, 79%);
+
+  --body-text: hsl(31, 18%, 27%);
+  --highlight-text: hsl(14, 91%, 70%);
+
+  --spacer: 1rem;
+  --image-spacer: 20rem;
+}
+
+body {
+  background: url(../img/nanaki.png) no-repeat bottom 3rem center var(--base-yellow);
+  display: flex;
+  flex-direction: column;
+  font: 18px 'Karla', sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--highlight-text);
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--skip-shade-300);
+}
+
+b, strong {
+  color: var(--highlight-text);
+  font-weight: 700;
+}
+
+main {
+  flex: 1;
+  margin-bottom: var(--image-spacer);
+}
+
+footer {
+  color: var(--body-text);
+  font-size: 0.75rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.title {
+  line-height: 0.75;
+  margin: var(--spacer) var(--spacer) 2rem;
+  overflow-wrap: break-word;
+}
+
+.title__url {
+  background: -webkit-linear-gradient(45deg, var(--skip-shade-200), var(--skip-shade-300));
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0.2rem 0 0.9rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title__est {
+  color: var(--skip-shade-100);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.content {
+  color: var(--body-text);
+  background: #fff;
+  border-radius: var(--spacer);
+  box-shadow:
+    var(--skip-shade-300) 0 0.25rem,
+    var(--skip-shade-200) 0 0.5rem,
+    var(--skip-shade-100) 0 0.75rem;
+  padding: var(--spacer);
+}
+
+.content__header {
+  color: var(--skip-shade-300);
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 0.85rem;
+}
+
+.updates {
+  list-style-type: "\2192 \00a0";
+  list-style-position: inside;
+  padding-inline-start: 0;
+}
+
+@media (min-width: 700px) {
+  main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--image-spacer);
+  }
+
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    background-position: bottom var(--spacer) right 1.5rem;
+  }
+
+  main {
+    align-items: center;
+    margin: 0;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .title {
+    margin-top: 0;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content__section {
+    flex: 1;
+  }
+
+  .content__section:first-child {
+    margin-right: var(--spacer);
+  }
+
+  .content__section--full-width {
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content__section:first-child {
+    flex: 0.75;
+  }
+}

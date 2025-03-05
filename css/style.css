@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   font: 18px "Karla", sans-serif;
-  min-height: 100vh;
+  line-height: 1.4;
 }
 
 a {
@@ -50,7 +50,7 @@ footer {
 .title {
   color: var(--highlight-text);
   line-height: 0.75;
-  margin: var(--spacer) var(--spacer) 2rem;
+  margin: var(--spacer) var(--spacer);
   overflow-wrap: break-word;
 }
 
@@ -89,6 +89,7 @@ footer {
   main {
     display: flex;
     justify-content: center;
+    margin-top: var(--spacer);
   }
 
   .container {
@@ -98,16 +99,11 @@ footer {
 
 @media (min-width: 900px) {
   main {
-    align-items: center;
-    margin: 0;
+    margin-top: 2rem;
   }
 
   .container {
     width: 50%;
-  }
-
-  .title {
-    margin-top: 0;
   }
 
   .content {

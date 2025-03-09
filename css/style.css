@@ -68,6 +68,17 @@ footer {
   font-weight: 800;
 }
 
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: var(--spacer);
+}
+
+.navigation__item {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
 .content {
   color: var(--body-text);
   padding: var(--spacer);

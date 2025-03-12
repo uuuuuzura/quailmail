@@ -3,7 +3,7 @@
           <div class="content__section content__section--full-width">
             <h2 class="content__header">Webmaster</h2>
             <div class="profile">
-              <img src="img/pfp.png" alt="Donovan" class="profile__picture" />
+              <img src="img/pfp.jpg" alt="Purple hydrangeas" class="profile__picture" />
               <dl class="desclist profile__stats">
                 <div class="desclist__row">
                   <dt>Name</dt>

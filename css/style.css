@@ -72,6 +72,8 @@ footer {
   list-style-type: none;
   margin: 0;
   padding: var(--spacer);
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 .navigation__item {

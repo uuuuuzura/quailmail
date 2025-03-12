@@ -15,7 +15,7 @@
         </div>
         <nav>
           <ul class="navigation">
-            <li class="navigation__item"><a href="/index.php">&#47;Home</a></li>
-            <li class="navigation__item"><a href="/about.php">&#47;About</a></li>
+            <li class="navigation__item"><a href="/index.php">&#47;index</a></li>
+            <li class="navigation__item"><a href="/about.php">&#47;about</a></li>
           </ul>
         </nav>

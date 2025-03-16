@@ -1,6 +1,6 @@
 <?php include('includes/header.php') ?>
         <div class="content">
-          <div class="content__section content__section--full-width">
+          <div class="content__section content__section--float">
             <h2 class="content__header">Webmaster</h2>
             <div class="profile">
               <img src="img/pfp.jpg" alt="Purple hydrangeas" class="profile__picture" />

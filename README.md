@@ -5,7 +5,7 @@
 ## TODO
 * [ ] `/works` page
 * [ ] `/now` page
-* [ ] Restructure profile
-* [ ] Change profile picture
+* [x] Restructure profile
+* [x] Change profile picture
 * [ ] Refactor CSS and HTML structure
 * [ ] Restructure project to make use of a routing system

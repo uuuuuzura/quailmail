@@ -15,6 +15,7 @@
           <div class="content__section content__section--full-width">
             <h2 class="content__header">Updates</h2>
             <ul class="updates">
+              <li><strong>16-03-2025</strong> Updated the site with a new layout and an about page. Hoping to upload some of my works in the coming months</li>
               <li><strong>30-01-2022</strong> Site launch 🎉</li>
             </ul>
           </div>

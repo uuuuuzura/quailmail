@@ -1,5 +1,5 @@
 <?php include('includes/header.php') ?>
-  <div class="content">
+  <main class="content">
     <section class="content__section">
       <h2 class="content__header">Hello 📬</h2>
       <p>
@@ -19,5 +19,5 @@
         <li><strong>30-01-2022</strong> Site launch 🎉</li>
       </ul>
     </section>
-  </div>
+  </main>
 <?php include('includes/footer.php') ?>

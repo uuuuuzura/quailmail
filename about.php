@@ -1,5 +1,5 @@
 <?php include('includes/header.php') ?>
-  <div class="content">
+  <main class="content">
     <aside class="content__section content__section--float">
       <h2 class="content__header">Webmaster</h2>
       <section class="profile">
@@ -43,5 +43,5 @@
         >.
       </p>
     </section>
-  </div>
+  </main>
 <?php include('includes/footer.php') ?>

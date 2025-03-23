@@ -1,7 +1,6 @@
-        <footer>
-          <p>Site by Quails 💌</p>
-        </footer>
-      </div>
-    </main>
+      <footer>
+        <p>Site by Quails 💌</p>
+      </footer>
+    </div>
   </body>
 </html>

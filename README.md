@@ -5,7 +5,8 @@
 ## TODO
 * [ ] `/works` page
 * [ ] `/now` page
-* [x] Restructure profile
-* [x] Change profile picture
-* [ ] Refactor CSS and HTML structure
+* [x] Refactor CSS and HTML structure
 * [ ] Restructure project to make use of a routing system
+* [ ] Swap positions of about sections on mobile
+* [ ] Rename "Website" section on `/about` page to "About"
+* [ ] Restyle update section

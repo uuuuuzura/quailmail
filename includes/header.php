@@ -8,9 +8,9 @@
   </head>
   <body>
     <div class="container">
-      <header class="title">
-        <h1 class="title__url">quail<wbr />mail<wbr />.moe</h1>
-        <span class="title__est">est. 2022</span>
+      <header class="header">
+        <h1 class="header__url">quail<wbr />mail<wbr />.moe</h1>
+        <span class="header__est">est. 2022</span>
       </header>
       <nav>
         <ul class="navigation">

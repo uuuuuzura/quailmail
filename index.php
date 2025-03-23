@@ -1,7 +1,7 @@
 <?php include('includes/header.php') ?>
-  <main class="content">
-    <section class="content__section">
-      <h2 class="content__header">Hello 📬</h2>
+  <main>
+    <section class="block">
+      <h2 class="block__header">Hello 📬</h2>
       <p>
         My name is <strong>Quails</strong>, or <strong>Donovan</strong>.
       </p>
@@ -12,9 +12,9 @@
         repurpose the domain as my central hub on the internet.
       </p>
     </section>
-    <section class="content__section">
-      <h2 class="content__header">Updates</h2>
-      <ul class="updates">
+    <section class="block">
+      <h2 class="block__header">Updates</h2>
+      <ul class="block__updates">
         <li><strong>16-03-2025</strong> Updated the site with a new layout and an about page. Hoping to upload some of my works in the coming months</li>
         <li><strong>30-01-2022</strong> Site launch 🎉</li>
       </ul>

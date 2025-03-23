@@ -14,6 +14,7 @@
 }
 
 body {
+  color: var(--body-text);
   background: var(--background);
   font: 18px "Karla", sans-serif;
   line-height: 1.4;
@@ -30,8 +31,7 @@ a:hover {
 }
 
 b,
-strong,
-dt {
+strong {
   color: var(--highlight-text);
   font-weight: 700;
 }
@@ -44,6 +44,12 @@ dt {
 
 main {
   margin: 2rem 0;
+}
+
+@media (min-width: 500px) {
+  .block--float {
+    float: left;
+  }
 }
 
 @media (min-width: 700px) {
@@ -62,41 +68,34 @@ main {
 
 /* MODULES */
 
-footer {
-  color: var(--body-text);
-  font-size: 0.75rem;
-  letter-spacing: 0.05rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  clear: both;
-}
+/** HEADER **/
 
-.title {
+.header {
   color: var(--highlight-text);
   line-height: 0.75;
   margin-bottom: var(--spacer);
   overflow-wrap: break-word;
 }
 
-.title__url {
+.header__url {
   font-size: 5rem;
   font-weight: 800;
   margin: 0;
   padding: 0.2rem 0 0.9rem;
 }
 
-.title__est {
+.header__est {
   color: var(--subtle-text);
   font-size: 3rem;
   font-weight: 800;
 }
 
 .navigation {
+  font-size: 1.4rem;
+  font-weight: 400;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-size: 1.4rem;
-  font-weight: 400;
 }
 
 .navigation__item {
@@ -104,18 +103,16 @@ footer {
   margin-right: 0.5rem;
 }
 
-.content {
-  color: var(--body-text);
-}
+/** MAIN **/
 
-.content__header {
+.block__header {
   color: var(--highlight-text);
   font-size: 2rem;
   font-weight: 800;
   margin: 0 0 0.85rem;
 }
 
-.updates {
+.block__updates {
   list-style-type: "\2192 \00a0";
   list-style-position: inside;
   padding-inline-start: 0;
@@ -124,9 +121,10 @@ footer {
 .profile {
   display: flex;
   flex-direction: column;
+
   background-color: var(--subtle-text);
-  padding: var(--spacer);
   border-radius: 15px;
+  padding: var(--spacer);
 }
 
 .profile__picture {
@@ -134,22 +132,24 @@ footer {
   width: 100%;
 }
 
-.desclist__row {
+.profile__row {
   display: flex;
-  justify-content: space-between;
-  text-align: right;
   align-items: center;
+  justify-content: space-between;
+
+  text-align: right;
+}
+
+.profile__stat-name {
+  color: var(--highlight-text);
+  font-weight: 700;
 }
 
 @media (min-width: 500px) {
-  .content__section--float {
-    float: left;
-  }
-
   .profile {
-    max-width: 200px;
     margin-right: var(--spacer);
     margin-bottom: var(--spacer);
+    max-width: 200px;
   }
 }
 
@@ -157,4 +157,14 @@ footer {
   .profile {
     max-width: 250px;
   }
+}
+
+/** FOOTER **/
+
+.footer {
+  clear: both;
+  font-size: 0.75rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }

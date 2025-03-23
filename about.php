@@ -1,31 +1,31 @@
 <?php include('includes/header.php') ?>
-  <main class="content">
-    <aside class="content__section content__section--float">
-      <h2 class="content__header">Webmaster</h2>
+  <main>
+    <aside class="block block--float">
+      <h2 class="block__header">Webmaster</h2>
       <section class="profile">
         <img src="img/pfp.jpg" alt="Purple hydrangeas" class="profile__picture" />
-        <dl class="desclist profile__stats">
-          <div class="desclist__row">
-            <dt>Name</dt>
+        <dl class="profile__stats">
+          <div class="profile__row">
+            <dt class="profile__stat-name">Name</dt>
             <dd>Quails or Donovan</dd>
           </div>
-          <div class="desclist__row">
-            <dt>Age</dt>
+          <div class="profile__row">
+            <dt class="profile__stat-name">Age</dt>
             <dd>30-something</dd>
           </div>
-          <div class="desclist__row">
-            <dt>Gender</dt>
+          <div class="profile__row">
+            <dt class="profile__stat-name">Gender</dt>
             <dd>???</dd>
           </div>
-          <div class="desclist__row">
-            <dt>Pronouns</dt>
+          <div class="profile__row">
+            <dt class="profile__stat-name">Pronouns</dt>
             <dd>they/them or he/him</dd>
           </div>
         </dl>
       </section>
     </aside>
-    <section class="content__section">
-      <h2 class="content__header">Website</h2>
+    <section class="block">
+      <h2 class="block__header">Website</h2>
       <p>
         This site was originally established in 2022, intended as a hub
         for various side projects that were only every half finished. Not

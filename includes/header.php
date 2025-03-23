@@ -9,10 +9,10 @@
   <body>
     <main>
       <div class="container">
-        <div class="title">
+        <header class="title">
           <h1 class="title__url">quail<wbr />mail<wbr />.moe</h1>
           <span class="title__est">est. 2022</span>
-        </div>
+        </header>
         <nav>
           <ul class="navigation">
             <li class="navigation__item"><a href="/index.php">&#47;index</a></li>

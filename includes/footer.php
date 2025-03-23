@@ -1,4 +1,4 @@
-<footer>
+        <footer>
           <p>Site by Quails 💌</p>
         </footer>
       </div>

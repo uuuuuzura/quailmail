@@ -24,7 +24,7 @@
         </dl>
       </section>
     </aside>
-    <section class="content__section content__section--full-width">
+    <section class="content__section">
       <h2 class="content__header">Website</h2>
       <p>
         This site was originally established in 2022, intended as a hub

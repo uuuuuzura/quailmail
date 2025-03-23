@@ -12,7 +12,7 @@
         repurpose the domain as my central hub on the internet.
       </p>
     </section>
-    <section class="content__section content__section--full-width">
+    <section class="content__section">
       <h2 class="content__header">Updates</h2>
       <ul class="updates">
         <li><strong>16-03-2025</strong> Updated the site with a new layout and an about page. Hoping to upload some of my works in the coming months</li>

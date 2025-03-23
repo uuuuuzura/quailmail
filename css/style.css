@@ -156,8 +156,4 @@ footer {
   .container {
     width: 50%;
   }
-
-  .content__section--full-width {
-    flex-basis: 100%;
-  }
 }

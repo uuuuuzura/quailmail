@@ -2,23 +2,25 @@
   <main>
     <section class="block">
       <h2 class="block__header">Works</h2>
-      <?php
-        $path = 'img/gallery/';
-        $dir = new DirectoryIterator($path);
+      <section class="gallery">
+        <?php
+          $path = 'img/gallery/';
+          $dir = new DirectoryIterator($path);
 
-        foreach($dir as $subDir) {
-          if($subDir->isDot()) continue;
-          echo '<h3>' . $subDir->getBaseName() . '</h3>';
+          foreach($dir as $subDir) {
+            if($subDir->isDot()) continue;
+            echo '<h3 class="gallery__header">' . $subDir->getBaseName() . '</h3>';
 
-          $files = new DirectoryIterator($path . $subDir->getBaseName());
+            $files = new DirectoryIterator($path . $subDir->getBaseName());
 
-          foreach($files as $fileInfo) {
-            if($fileInfo->isDot()) continue;
+            foreach($files as $fileInfo) {
+              if($fileInfo->isDot()) continue;
 
-            echo '<img src="' . $fileInfo->getPathName() . '" />';
+              echo '<img class="gallery__picture" src="' . $fileInfo->getPathName() . '" />';
+            }
           }
-        }
-      ?>
+        ?>
+      </section>
     </section>
   </main>
 <?php include('includes/footer.php') ?>

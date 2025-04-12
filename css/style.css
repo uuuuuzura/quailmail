@@ -145,6 +145,24 @@ main {
   font-weight: 700;
 }
 
+.gallery {
+  text-align: center;
+}
+
+.gallery__header {
+  color: var(--subtle-text);
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin: 0 auto 0.5rem;
+}
+
+.gallery__picture {
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+  width:100%;
+  max-width: 600px;
+}
+
 @media (min-width: 500px) {
   .profile {
     margin-right: var(--spacer);

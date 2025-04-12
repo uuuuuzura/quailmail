@@ -2,24 +2,21 @@
   <main>
     <section class="block">
       <h2 class="block__header">Works</h2>
-      <h3>2025</h3>
       <?php
-        $path = 'img/2025/';
+        $path = 'img/gallery/';
         $dir = new DirectoryIterator($path);
-        foreach ($dir as $fileInfo) {
-            if(!$fileInfo->isDot()) {
-                echo '<img src="' . $path . $fileInfo->getFilename() . '" />';
-            }
-        }
-      ?>
-      <h3>2024</h3>
-      <?php
-        $path = 'img/2024/';
-        $dir = new DirectoryIterator($path);
-        foreach ($dir as $fileInfo) {
-            if(!$fileInfo->isDot()) {
-                echo '<img src="' . $path . $fileInfo->getFilename() . '" />';
-            }
+
+        foreach($dir as $subDir) {
+          if($subDir->isDot()) continue;
+          echo '<h3>' . $subDir->getBaseName() . '</h3>';
+
+          $files = new DirectoryIterator($path . $subDir->getBaseName());
+
+          foreach($files as $fileInfo) {
+            if($fileInfo->isDot()) continue;
+
+            echo '<img src="' . $fileInfo->getPathName() . '" />';
+          }
         }
       ?>
     </section>
